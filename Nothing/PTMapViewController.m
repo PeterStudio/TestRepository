@@ -38,7 +38,7 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-
+    self.view.backgroundColor = [UIColor purpleColor];
     self.mapView = [[MAMapView alloc] initWithFrame:self.view.bounds];
     self.mapView.distanceFilter = 0.1;
     self.mapView.desiredAccuracy = kCLLocationAccuracyBest;
