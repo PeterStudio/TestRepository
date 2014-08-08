@@ -32,6 +32,7 @@
 		1291D2C61994B56C00E67342 /* AMapSearchKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1291D2C51994B56C00E67342 /* AMapSearchKit.framework */; };
 		1291D2C81994B57E00E67342 /* AMap.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 1291D2C71994B57E00E67342 /* AMap.bundle */; };
 		1291D2CB1994C1CD00E67342 /* PTFuncTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1291D2CA1994C1CD00E67342 /* PTFuncTableView.m */; };
+		1291D2CE1994CCF100E67342 /* PTWelcomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1291D2CD1994CCF100E67342 /* PTWelcomeViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,6 +77,8 @@
 		1291D2C71994B57E00E67342 /* AMap.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = AMap.bundle; sourceTree = "<group>"; };
 		1291D2C91994C1CD00E67342 /* PTFuncTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTFuncTableView.h; sourceTree = "<group>"; };
 		1291D2CA1994C1CD00E67342 /* PTFuncTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTFuncTableView.m; sourceTree = "<group>"; };
+		1291D2CC1994CCF100E67342 /* PTWelcomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTWelcomeViewController.h; sourceTree = "<group>"; };
+		1291D2CD1994CCF100E67342 /* PTWelcomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTWelcomeViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -217,6 +220,8 @@
 			children = (
 				1291D2B01994B47800E67342 /* PTMapViewController.h */,
 				1291D2B11994B47800E67342 /* PTMapViewController.m */,
+				1291D2CC1994CCF100E67342 /* PTWelcomeViewController.h */,
+				1291D2CD1994CCF100E67342 /* PTWelcomeViewController.m */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -327,6 +332,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1291D28E1994ACE800E67342 /* PTAppDelegate.m in Sources */,
+				1291D2CE1994CCF100E67342 /* PTWelcomeViewController.m in Sources */,
 				1291D28A1994ACE800E67342 /* main.m in Sources */,
 				1291D2B21994B47800E67342 /* PTMapViewController.m in Sources */,
 				1291D2CB1994C1CD00E67342 /* PTFuncTableView.m in Sources */,

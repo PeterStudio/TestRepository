@@ -66,18 +66,19 @@
     self.listView = [[PTFuncTableView alloc] initWithFrame:CGRectMake(self.view.frame.size.width - 100, 64, 100, 0)];
     self.listView.funcDelegate = self;
     [self.view addSubview:self.listView];
+    [self.view bringSubviewToFront:self.listView];
 }
 
 - (void)showPopView:(id)sender{
     isRightBtnSelected = !isRightBtnSelected;
     if (isRightBtnSelected) {
-        [UIView animateWithDuration:0.75 animations:^{
-            [self.listView setFrame:CGRectMake(self.view.frame.size.width - 100, 64, 100, 220)];
-        }];
+        [UIView animateWithDuration:0.5 delay:0.1 options:UIViewAnimationOptionTransitionCurlDown animations:^{
+             [self.listView setFrame:CGRectMake(self.view.frame.size.width - 100, 64, 100, 220)];
+        } completion:nil];
     }else{
-        [UIView animateWithDuration:0.75 animations:^{
+        [UIView animateWithDuration:0.5 delay:0.1 options:UIViewAnimationOptionTransitionCurlUp animations:^{
             [self.listView setFrame:CGRectMake(self.view.frame.size.width - 100, 64, 100, 0)];
-        }];
+        } completion:nil];
     }
 }
 
@@ -85,9 +86,9 @@
 - (void)tableCellSelectedWithIndex:(NSIndexPath *)indexPath{
     NSLog(@"you selected indexRow:%d",indexPath.row);
     isRightBtnSelected = NO;
-    [UIView animateWithDuration:0.75 animations:^{
+    [UIView animateWithDuration:0.5 delay:0.1 options:UIViewAnimationOptionTransitionCurlUp animations:^{
         [self.listView setFrame:CGRectMake(self.view.frame.size.width - 100, 64, 100, 0)];
-    }];
+    } completion:nil];
 }
 
 #pragma mark - MapViewDelegate

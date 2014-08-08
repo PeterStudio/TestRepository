@@ -18,6 +18,7 @@
         self.delegate   = self;
         self.dataSource = self;
         [self setBackgroundColor:[UIColor clearColor]];
+        self.scrollEnabled = NO;
         [self steup];
     }
     return self;
@@ -25,6 +26,10 @@
 
 - (void)steup{
     
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+    return 40.0f;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{

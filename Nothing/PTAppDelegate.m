@@ -11,7 +11,7 @@
 #import <AMapSearchKit/AMapSearchAPI.h>
 
 #import "PTMapViewController.h"
-
+#import "PTWelcomeViewController.h"
 @implementation PTAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
@@ -25,13 +25,13 @@
     //    b7021a3686bc3ec3842686efc0d69927
     //    AMapSearchAPI *search = [[AMapSearchAPI alloc] initWithSearchKey: @"您的key" Delegate:self];
     
-    PTMapViewController *mapVC = [[PTMapViewController alloc] init];
-    mapVC.title = @"云中央";
-    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:mapVC];
-//    nav.navigationBar.backgroundColor = [UIColor yellowColor];
+//    PTMapViewController *mapVC = [[PTMapViewController alloc] init];
+//    mapVC.title = @"云中央";
+//    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:mapVC];
+//    [self.window setRootViewController:nav];
     
-    [self.window setRootViewController:nav];
-    
+    PTWelcomeViewController *welcomeVC = [[PTWelcomeViewController alloc] init];
+    [self.window setRootViewController:welcomeVC];
     
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
