@@ -26,7 +26,10 @@
     //    AMapSearchAPI *search = [[AMapSearchAPI alloc] initWithSearchKey: @"您的key" Delegate:self];
     
     PTMapViewController *mapVC = [[PTMapViewController alloc] init];
+    mapVC.title = @"云中央";
     UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:mapVC];
+//    nav.navigationBar.backgroundColor = [UIColor yellowColor];
+    
     [self.window setRootViewController:nav];
     
     

@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "PTFuncTableView.h"
 
-@interface PTMapViewController : UIViewController
+@interface PTMapViewController : UIViewController<PTFuncTableViewDelegate>{
+    BOOL isRightBtnSelected;
+}
 
 @end

@@ -31,6 +31,7 @@
 		1291D2C41994B56200E67342 /* MAMapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1291D2C31994B56200E67342 /* MAMapKit.framework */; };
 		1291D2C61994B56C00E67342 /* AMapSearchKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1291D2C51994B56C00E67342 /* AMapSearchKit.framework */; };
 		1291D2C81994B57E00E67342 /* AMap.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 1291D2C71994B57E00E67342 /* AMap.bundle */; };
+		1291D2CB1994C1CD00E67342 /* PTFuncTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1291D2CA1994C1CD00E67342 /* PTFuncTableView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +74,8 @@
 		1291D2C31994B56200E67342 /* MAMapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MAMapKit.framework; path = ../../AMap_iOS_API_Lib_V2.2.1/2D/MAMapKit.framework; sourceTree = "<group>"; };
 		1291D2C51994B56C00E67342 /* AMapSearchKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AMapSearchKit.framework; path = ../../AMap_iOS_API_Lib_V2.2.1/Search/AMapSearchKit.framework; sourceTree = "<group>"; };
 		1291D2C71994B57E00E67342 /* AMap.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = AMap.bundle; sourceTree = "<group>"; };
+		1291D2C91994C1CD00E67342 /* PTFuncTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTFuncTableView.h; sourceTree = "<group>"; };
+		1291D2CA1994C1CD00E67342 /* PTFuncTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTFuncTableView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -196,6 +199,8 @@
 		1291D2AC1994B43F00E67342 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				1291D2C91994C1CD00E67342 /* PTFuncTableView.h */,
+				1291D2CA1994C1CD00E67342 /* PTFuncTableView.m */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -324,6 +329,7 @@
 				1291D28E1994ACE800E67342 /* PTAppDelegate.m in Sources */,
 				1291D28A1994ACE800E67342 /* main.m in Sources */,
 				1291D2B21994B47800E67342 /* PTMapViewController.m in Sources */,
+				1291D2CB1994C1CD00E67342 /* PTFuncTableView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -534,6 +540,7 @@
 				1291D2A81994ACE800E67342 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1291D2A91994ACE800E67342 /* Build configuration list for PBXNativeTarget "NothingTests" */ = {
 			isa = XCConfigurationList;
@@ -542,6 +549,7 @@
 				1291D2AB1994ACE800E67342 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

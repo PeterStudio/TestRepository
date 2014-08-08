@@ -9,15 +9,16 @@
 #import "PTMapViewController.h"
 #import <MAMapKit/MAMapKit.h>
 
-
-
 @interface PTMapViewController ()<MAMapViewDelegate>
 
 @property(nonatomic,strong) MAMapView *mapView;
+
+@property (nonatomic)PTFuncTableView *listView;
 @end
 
 @implementation PTMapViewController
 @synthesize mapView = _mapView;
+@synthesize listView = _listView;
 
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -29,6 +30,10 @@
     return self;
 }
 
+- (void)configData{
+    isRightBtnSelected = NO;
+}
+
 - (void)viewDidAppear:(BOOL)animated{
     [super viewDidAppear:animated];
     self.mapView.showsUserLocation = YES;
@@ -38,7 +43,16 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-
+    [self configData];
+    
+    
+    UIBarButtonItem *addItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(showPopView:)];
+    self.navigationItem.rightBarButtonItem = addItem;
+    
+//    NSDictionary *dict = [NSDictionary dictionaryWithObject:[UIColor yellowColor] forKey:UITextAttributeTextColor];
+//    self.navigationController.navigationBar.titleTextAttributes = dict;
+    
+    
     self.mapView = [[MAMapView alloc] initWithFrame:self.view.bounds];
     self.mapView.distanceFilter = 0.1;
     self.mapView.desiredAccuracy = kCLLocationAccuracyBest;
@@ -48,9 +62,35 @@
     [self.mapView setUserTrackingMode: MAUserTrackingModeFollow animated:YES];
     [self.view addSubview:self.mapView];
     
+    
+    self.listView = [[PTFuncTableView alloc] initWithFrame:CGRectMake(self.view.frame.size.width - 100, 64, 100, 0)];
+    self.listView.funcDelegate = self;
+    [self.view addSubview:self.listView];
 }
 
+- (void)showPopView:(id)sender{
+    isRightBtnSelected = !isRightBtnSelected;
+    if (isRightBtnSelected) {
+        [UIView animateWithDuration:0.75 animations:^{
+            [self.listView setFrame:CGRectMake(self.view.frame.size.width - 100, 64, 100, 220)];
+        }];
+    }else{
+        [UIView animateWithDuration:0.75 animations:^{
+            [self.listView setFrame:CGRectMake(self.view.frame.size.width - 100, 64, 100, 0)];
+        }];
+    }
+}
 
+#pragma mark - PTFuncTableViewDelegate
+- (void)tableCellSelectedWithIndex:(NSIndexPath *)indexPath{
+    NSLog(@"you selected indexRow:%d",indexPath.row);
+    isRightBtnSelected = NO;
+    [UIView animateWithDuration:0.75 animations:^{
+        [self.listView setFrame:CGRectMake(self.view.frame.size.width - 100, 64, 100, 0)];
+    }];
+}
+
+#pragma mark - MapViewDelegate
 - (void)mapView:(MAMapView *)mapView didUpdateUserLocation:(MAUserLocation *)userLocation updatingLocation:(BOOL)updatingLocation{
     NSLog(@"location:%f",userLocation.coordinate.latitude);
     [self.mapView setCenterCoordinate:userLocation.coordinate];
