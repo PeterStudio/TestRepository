@@ -19,6 +19,18 @@
 		1291D2991994ACE800E67342 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1291D2811994ACE800E67342 /* UIKit.framework */; };
 		1291D2A11994ACE800E67342 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1291D29F1994ACE800E67342 /* InfoPlist.strings */; };
 		1291D2A31994ACE800E67342 /* NothingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1291D2A21994ACE800E67342 /* NothingTests.m */; };
+		1291D2B21994B47800E67342 /* PTMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1291D2B11994B47800E67342 /* PTMapViewController.m */; };
+		1291D2B41994B4C200E67342 /* libstdc++.6.0.9.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 1291D2B31994B4C200E67342 /* libstdc++.6.0.9.dylib */; };
+		1291D2B61994B4EF00E67342 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1291D2B51994B4EF00E67342 /* Security.framework */; };
+		1291D2B81994B4F500E67342 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1291D2B71994B4F500E67342 /* QuartzCore.framework */; };
+		1291D2BA1994B4FD00E67342 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 1291D2B91994B4FD00E67342 /* libz.dylib */; };
+		1291D2BC1994B50C00E67342 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1291D2BB1994B50C00E67342 /* SystemConfiguration.framework */; };
+		1291D2BE1994B51800E67342 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1291D2BD1994B51800E67342 /* CoreTelephony.framework */; };
+		1291D2C01994B51E00E67342 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1291D2BF1994B51E00E67342 /* CoreLocation.framework */; };
+		1291D2C21994B52800E67342 /* libstdc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 1291D2C11994B52800E67342 /* libstdc++.dylib */; };
+		1291D2C41994B56200E67342 /* MAMapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1291D2C31994B56200E67342 /* MAMapKit.framework */; };
+		1291D2C61994B56C00E67342 /* AMapSearchKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1291D2C51994B56C00E67342 /* AMapSearchKit.framework */; };
+		1291D2C81994B57E00E67342 /* AMap.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 1291D2C71994B57E00E67342 /* AMap.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +60,19 @@
 		1291D29E1994ACE800E67342 /* NothingTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "NothingTests-Info.plist"; sourceTree = "<group>"; };
 		1291D2A01994ACE800E67342 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		1291D2A21994ACE800E67342 /* NothingTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NothingTests.m; sourceTree = "<group>"; };
+		1291D2B01994B47800E67342 /* PTMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTMapViewController.h; sourceTree = "<group>"; };
+		1291D2B11994B47800E67342 /* PTMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTMapViewController.m; sourceTree = "<group>"; };
+		1291D2B31994B4C200E67342 /* libstdc++.6.0.9.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.6.0.9.dylib"; path = "usr/lib/libstdc++.6.0.9.dylib"; sourceTree = SDKROOT; };
+		1291D2B51994B4EF00E67342 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		1291D2B71994B4F500E67342 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		1291D2B91994B4FD00E67342 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		1291D2BB1994B50C00E67342 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		1291D2BD1994B51800E67342 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		1291D2BF1994B51E00E67342 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		1291D2C11994B52800E67342 /* libstdc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.dylib"; path = "usr/lib/libstdc++.dylib"; sourceTree = SDKROOT; };
+		1291D2C31994B56200E67342 /* MAMapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MAMapKit.framework; path = ../../AMap_iOS_API_Lib_V2.2.1/2D/MAMapKit.framework; sourceTree = "<group>"; };
+		1291D2C51994B56C00E67342 /* AMapSearchKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AMapSearchKit.framework; path = ../../AMap_iOS_API_Lib_V2.2.1/Search/AMapSearchKit.framework; sourceTree = "<group>"; };
+		1291D2C71994B57E00E67342 /* AMap.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = AMap.bundle; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +80,16 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1291D2C61994B56C00E67342 /* AMapSearchKit.framework in Frameworks */,
+				1291D2C41994B56200E67342 /* MAMapKit.framework in Frameworks */,
+				1291D2C21994B52800E67342 /* libstdc++.dylib in Frameworks */,
+				1291D2C01994B51E00E67342 /* CoreLocation.framework in Frameworks */,
+				1291D2BE1994B51800E67342 /* CoreTelephony.framework in Frameworks */,
+				1291D2BC1994B50C00E67342 /* SystemConfiguration.framework in Frameworks */,
+				1291D2BA1994B4FD00E67342 /* libz.dylib in Frameworks */,
+				1291D2B81994B4F500E67342 /* QuartzCore.framework in Frameworks */,
+				1291D2B61994B4EF00E67342 /* Security.framework in Frameworks */,
+				1291D2B41994B4C200E67342 /* libstdc++.6.0.9.dylib in Frameworks */,
 				1291D2801994ACE800E67342 /* CoreGraphics.framework in Frameworks */,
 				1291D2821994ACE800E67342 /* UIKit.framework in Frameworks */,
 				1291D27E1994ACE800E67342 /* Foundation.framework in Frameworks */,
@@ -96,6 +131,16 @@
 		1291D27C1994ACE800E67342 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				1291D2C51994B56C00E67342 /* AMapSearchKit.framework */,
+				1291D2C31994B56200E67342 /* MAMapKit.framework */,
+				1291D2C11994B52800E67342 /* libstdc++.dylib */,
+				1291D2BF1994B51E00E67342 /* CoreLocation.framework */,
+				1291D2BD1994B51800E67342 /* CoreTelephony.framework */,
+				1291D2BB1994B50C00E67342 /* SystemConfiguration.framework */,
+				1291D2B91994B4FD00E67342 /* libz.dylib */,
+				1291D2B71994B4F500E67342 /* QuartzCore.framework */,
+				1291D2B51994B4EF00E67342 /* Security.framework */,
+				1291D2B31994B4C200E67342 /* libstdc++.6.0.9.dylib */,
 				1291D27D1994ACE800E67342 /* Foundation.framework */,
 				1291D27F1994ACE800E67342 /* CoreGraphics.framework */,
 				1291D2811994ACE800E67342 /* UIKit.framework */,
@@ -107,6 +152,10 @@
 		1291D2831994ACE800E67342 /* Nothing */ = {
 			isa = PBXGroup;
 			children = (
+				1291D2AF1994B45A00E67342 /* ThirdLib */,
+				1291D2AE1994B44D00E67342 /* Controller */,
+				1291D2AD1994B44600E67342 /* Model */,
+				1291D2AC1994B43F00E67342 /* View */,
 				1291D28C1994ACE800E67342 /* PTAppDelegate.h */,
 				1291D28D1994ACE800E67342 /* PTAppDelegate.m */,
 				1291D28F1994ACE800E67342 /* Images.xcassets */,
@@ -142,6 +191,37 @@
 				1291D29F1994ACE800E67342 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1291D2AC1994B43F00E67342 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		1291D2AD1994B44600E67342 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		1291D2AE1994B44D00E67342 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1291D2B01994B47800E67342 /* PTMapViewController.h */,
+				1291D2B11994B47800E67342 /* PTMapViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		1291D2AF1994B45A00E67342 /* ThirdLib */ = {
+			isa = PBXGroup;
+			children = (
+				1291D2C71994B57E00E67342 /* AMap.bundle */,
+			);
+			name = ThirdLib;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -220,6 +300,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1291D2C81994B57E00E67342 /* AMap.bundle in Resources */,
 				1291D2881994ACE800E67342 /* InfoPlist.strings in Resources */,
 				1291D2901994ACE800E67342 /* Images.xcassets in Resources */,
 			);
@@ -242,6 +323,7 @@
 			files = (
 				1291D28E1994ACE800E67342 /* PTAppDelegate.m in Sources */,
 				1291D28A1994ACE800E67342 /* main.m in Sources */,
+				1291D2B21994B47800E67342 /* PTMapViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -360,10 +442,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/yunzhongyang/Desktop/AMap_iOS_API_Lib_V2.2.1/2D,
+					/Users/yunzhongyang/Desktop/AMap_iOS_API_Lib_V2.2.1/Search,
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Nothing/Nothing-Prefix.pch";
 				INFOPLIST_FILE = "Nothing/Nothing-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -373,10 +461,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/yunzhongyang/Desktop/AMap_iOS_API_Lib_V2.2.1/2D,
+					/Users/yunzhongyang/Desktop/AMap_iOS_API_Lib_V2.2.1/Search,
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Nothing/Nothing-Prefix.pch";
 				INFOPLIST_FILE = "Nothing/Nothing-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

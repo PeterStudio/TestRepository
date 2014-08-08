@@ -7,6 +7,10 @@
 //
 
 #import "PTAppDelegate.h"
+#import <MAMapKit/MAMapServices.h>
+#import <AMapSearchKit/AMapSearchAPI.h>
+
+#import "PTMapViewController.h"
 
 @implementation PTAppDelegate
 
@@ -14,6 +18,18 @@
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
+    
+    // Map key
+    [MAMapServices sharedServices].apiKey =@"918bae79445d2b9650d59f66512992b3";
+    // serach key
+    //    b7021a3686bc3ec3842686efc0d69927
+    //    AMapSearchAPI *search = [[AMapSearchAPI alloc] initWithSearchKey: @"您的key" Delegate:self];
+    
+    PTMapViewController *mapVC = [[PTMapViewController alloc] init];
+    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:mapVC];
+    [self.window setRootViewController:nav];
+    
+    
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     return YES;
