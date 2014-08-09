@@ -33,6 +33,7 @@
 		1291D2C81994B57E00E67342 /* AMap.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 1291D2C71994B57E00E67342 /* AMap.bundle */; };
 		1291D2CB1994C1CD00E67342 /* PTFuncTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1291D2CA1994C1CD00E67342 /* PTFuncTableView.m */; };
 		1291D2CE1994CCF100E67342 /* PTWelcomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1291D2CD1994CCF100E67342 /* PTWelcomeViewController.m */; };
+		12A132341995D022005A994A /* PTFriendListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 12A132331995D022005A994A /* PTFriendListViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,6 +80,8 @@
 		1291D2CA1994C1CD00E67342 /* PTFuncTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTFuncTableView.m; sourceTree = "<group>"; };
 		1291D2CC1994CCF100E67342 /* PTWelcomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTWelcomeViewController.h; sourceTree = "<group>"; };
 		1291D2CD1994CCF100E67342 /* PTWelcomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTWelcomeViewController.m; sourceTree = "<group>"; };
+		12A132321995D022005A994A /* PTFriendListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTFriendListViewController.h; sourceTree = "<group>"; };
+		12A132331995D022005A994A /* PTFriendListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTFriendListViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -222,6 +225,8 @@
 				1291D2B11994B47800E67342 /* PTMapViewController.m */,
 				1291D2CC1994CCF100E67342 /* PTWelcomeViewController.h */,
 				1291D2CD1994CCF100E67342 /* PTWelcomeViewController.m */,
+				12A132321995D022005A994A /* PTFriendListViewController.h */,
+				12A132331995D022005A994A /* PTFriendListViewController.m */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -335,6 +340,7 @@
 				1291D2CE1994CCF100E67342 /* PTWelcomeViewController.m in Sources */,
 				1291D28A1994ACE800E67342 /* main.m in Sources */,
 				1291D2B21994B47800E67342 /* PTMapViewController.m in Sources */,
+				12A132341995D022005A994A /* PTFriendListViewController.m in Sources */,
 				1291D2CB1994C1CD00E67342 /* PTFuncTableView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

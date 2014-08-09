@@ -12,6 +12,7 @@
 
 #import "PTMapViewController.h"
 #import "PTWelcomeViewController.h"
+#import "PTFriendListViewController.h"
 @implementation PTAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
@@ -30,8 +31,11 @@
 //    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:mapVC];
 //    [self.window setRootViewController:nav];
     
-    PTWelcomeViewController *welcomeVC = [[PTWelcomeViewController alloc] init];
-    [self.window setRootViewController:welcomeVC];
+//    PTWelcomeViewController *welcomeVC = [[PTWelcomeViewController alloc] init];
+//    [self.window setRootViewController:welcomeVC];
+    
+    PTFriendListViewController *friendListVC = [[PTFriendListViewController alloc] init];
+    [self.window setRootViewController:friendListVC];
     
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
