@@ -84,14 +84,14 @@
 
 #pragma mark - PTFuncTableViewDelegate
 - (void)tableCellSelectedWithIndex:(NSIndexPath *)indexPath{
-    NSLog(@"you selected indexRow:%d",indexPath.row);
+    NSLog(@"you selected indexRow:%ld",(long)indexPath.row);
     isRightBtnSelected = NO;
     [UIView animateWithDuration:0.5 delay:0.1 options:UIViewAnimationOptionTransitionCurlUp animations:^{
         [self.listView setFrame:CGRectMake(self.view.frame.size.width - 100, 64, 100, 0)];
     } completion:nil];
 }
 
-#pragma mark - MapViewDelegate
+#pragma mark - MAMapViewDelegate
 - (void)mapView:(MAMapView *)mapView didUpdateUserLocation:(MAUserLocation *)userLocation updatingLocation:(BOOL)updatingLocation{
     NSLog(@"location:%f",userLocation.coordinate.latitude);
     [self.mapView setCenterCoordinate:userLocation.coordinate];
