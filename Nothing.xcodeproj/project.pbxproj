@@ -7,6 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0BC55827199A4CDC0087886F /* bg-addbutton-highlighted.png in Resources */ = {isa = PBXBuildFile; fileRef = 0BC55819199A4CDC0087886F /* bg-addbutton-highlighted.png */; };
+		0BC55828199A4CDC0087886F /* bg-addbutton-highlighted@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0BC5581A199A4CDC0087886F /* bg-addbutton-highlighted@2x.png */; };
+		0BC55829199A4CDC0087886F /* bg-addbutton.png in Resources */ = {isa = PBXBuildFile; fileRef = 0BC5581B199A4CDC0087886F /* bg-addbutton.png */; };
+		0BC5582A199A4CDC0087886F /* bg-addbutton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0BC5581C199A4CDC0087886F /* bg-addbutton@2x.png */; };
+		0BC5582B199A4CDC0087886F /* bg-menuitem-highlighted.png in Resources */ = {isa = PBXBuildFile; fileRef = 0BC5581D199A4CDC0087886F /* bg-menuitem-highlighted.png */; };
+		0BC5582C199A4CDC0087886F /* bg-menuitem-highlighted@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0BC5581E199A4CDC0087886F /* bg-menuitem-highlighted@2x.png */; };
+		0BC5582D199A4CDC0087886F /* bg-menuitem.png in Resources */ = {isa = PBXBuildFile; fileRef = 0BC5581F199A4CDC0087886F /* bg-menuitem.png */; };
+		0BC5582E199A4CDC0087886F /* bg-menuitem@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0BC55820199A4CDC0087886F /* bg-menuitem@2x.png */; };
+		0BC5582F199A4CDC0087886F /* icon-plus-highlighted.png in Resources */ = {isa = PBXBuildFile; fileRef = 0BC55821199A4CDC0087886F /* icon-plus-highlighted.png */; };
+		0BC55830199A4CDC0087886F /* icon-plus-highlighted@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0BC55822199A4CDC0087886F /* icon-plus-highlighted@2x.png */; };
+		0BC55831199A4CDC0087886F /* icon-plus.png in Resources */ = {isa = PBXBuildFile; fileRef = 0BC55823199A4CDC0087886F /* icon-plus.png */; };
+		0BC55832199A4CDC0087886F /* icon-plus@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0BC55824199A4CDC0087886F /* icon-plus@2x.png */; };
+		0BC55833199A4CDC0087886F /* icon-star.png in Resources */ = {isa = PBXBuildFile; fileRef = 0BC55825199A4CDC0087886F /* icon-star.png */; };
+		0BC55834199A4CDC0087886F /* icon-star@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0BC55826199A4CDC0087886F /* icon-star@2x.png */; };
+		0BC55839199A4D0A0087886F /* QuadCurveMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BC55836199A4D0A0087886F /* QuadCurveMenu.m */; };
+		0BC5583A199A4D0A0087886F /* QuadCurveMenuItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BC55838199A4D0A0087886F /* QuadCurveMenuItem.m */; };
+		0BC5583C199A4DE10087886F /* MAMapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BC5583B199A4DE10087886F /* MAMapKit.framework */; };
+		0BC5583E199A4DEB0087886F /* AMapSearchKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BC5583D199A4DEB0087886F /* AMapSearchKit.framework */; };
 		1291D27E1994ACE800E67342 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1291D27D1994ACE800E67342 /* Foundation.framework */; };
 		1291D2801994ACE800E67342 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1291D27F1994ACE800E67342 /* CoreGraphics.framework */; };
 		1291D2821994ACE800E67342 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1291D2811994ACE800E67342 /* UIKit.framework */; };
@@ -28,8 +46,6 @@
 		1291D2BE1994B51800E67342 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1291D2BD1994B51800E67342 /* CoreTelephony.framework */; };
 		1291D2C01994B51E00E67342 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1291D2BF1994B51E00E67342 /* CoreLocation.framework */; };
 		1291D2C21994B52800E67342 /* libstdc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 1291D2C11994B52800E67342 /* libstdc++.dylib */; };
-		1291D2C41994B56200E67342 /* MAMapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1291D2C31994B56200E67342 /* MAMapKit.framework */; };
-		1291D2C61994B56C00E67342 /* AMapSearchKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1291D2C51994B56C00E67342 /* AMapSearchKit.framework */; };
 		1291D2C81994B57E00E67342 /* AMap.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 1291D2C71994B57E00E67342 /* AMap.bundle */; };
 		1291D2CB1994C1CD00E67342 /* PTFuncTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1291D2CA1994C1CD00E67342 /* PTFuncTableView.m */; };
 		1291D2CE1994CCF100E67342 /* PTWelcomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1291D2CD1994CCF100E67342 /* PTWelcomeViewController.m */; };
@@ -47,6 +63,26 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0BC55819199A4CDC0087886F /* bg-addbutton-highlighted.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bg-addbutton-highlighted.png"; sourceTree = "<group>"; };
+		0BC5581A199A4CDC0087886F /* bg-addbutton-highlighted@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bg-addbutton-highlighted@2x.png"; sourceTree = "<group>"; };
+		0BC5581B199A4CDC0087886F /* bg-addbutton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bg-addbutton.png"; sourceTree = "<group>"; };
+		0BC5581C199A4CDC0087886F /* bg-addbutton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bg-addbutton@2x.png"; sourceTree = "<group>"; };
+		0BC5581D199A4CDC0087886F /* bg-menuitem-highlighted.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bg-menuitem-highlighted.png"; sourceTree = "<group>"; };
+		0BC5581E199A4CDC0087886F /* bg-menuitem-highlighted@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bg-menuitem-highlighted@2x.png"; sourceTree = "<group>"; };
+		0BC5581F199A4CDC0087886F /* bg-menuitem.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bg-menuitem.png"; sourceTree = "<group>"; };
+		0BC55820199A4CDC0087886F /* bg-menuitem@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bg-menuitem@2x.png"; sourceTree = "<group>"; };
+		0BC55821199A4CDC0087886F /* icon-plus-highlighted.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-plus-highlighted.png"; sourceTree = "<group>"; };
+		0BC55822199A4CDC0087886F /* icon-plus-highlighted@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-plus-highlighted@2x.png"; sourceTree = "<group>"; };
+		0BC55823199A4CDC0087886F /* icon-plus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-plus.png"; sourceTree = "<group>"; };
+		0BC55824199A4CDC0087886F /* icon-plus@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-plus@2x.png"; sourceTree = "<group>"; };
+		0BC55825199A4CDC0087886F /* icon-star.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-star.png"; sourceTree = "<group>"; };
+		0BC55826199A4CDC0087886F /* icon-star@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-star@2x.png"; sourceTree = "<group>"; };
+		0BC55835199A4D0A0087886F /* QuadCurveMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuadCurveMenu.h; sourceTree = "<group>"; };
+		0BC55836199A4D0A0087886F /* QuadCurveMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuadCurveMenu.m; sourceTree = "<group>"; };
+		0BC55837199A4D0A0087886F /* QuadCurveMenuItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuadCurveMenuItem.h; sourceTree = "<group>"; };
+		0BC55838199A4D0A0087886F /* QuadCurveMenuItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuadCurveMenuItem.m; sourceTree = "<group>"; };
+		0BC5583B199A4DE10087886F /* MAMapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MAMapKit.framework; path = ../../../Documents/PeterStudio/AMap_iOS_API_Lib_V2.2.1/2D/MAMapKit.framework; sourceTree = "<group>"; };
+		0BC5583D199A4DEB0087886F /* AMapSearchKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AMapSearchKit.framework; path = ../../../Documents/PeterStudio/AMap_iOS_API_Lib_V2.2.1/Search/AMapSearchKit.framework; sourceTree = "<group>"; };
 		1291D27A1994ACE800E67342 /* Nothing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Nothing.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1291D27D1994ACE800E67342 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1291D27F1994ACE800E67342 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -89,8 +125,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1291D2C61994B56C00E67342 /* AMapSearchKit.framework in Frameworks */,
-				1291D2C41994B56200E67342 /* MAMapKit.framework in Frameworks */,
+				0BC5583E199A4DEB0087886F /* AMapSearchKit.framework in Frameworks */,
+				0BC5583C199A4DE10087886F /* MAMapKit.framework in Frameworks */,
 				1291D2C21994B52800E67342 /* libstdc++.dylib in Frameworks */,
 				1291D2C01994B51E00E67342 /* CoreLocation.framework in Frameworks */,
 				1291D2BE1994B51800E67342 /* CoreTelephony.framework in Frameworks */,
@@ -118,6 +154,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0BC55811199A4C330087886F /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				0BC55819199A4CDC0087886F /* bg-addbutton-highlighted.png */,
+				0BC5581A199A4CDC0087886F /* bg-addbutton-highlighted@2x.png */,
+				0BC5581B199A4CDC0087886F /* bg-addbutton.png */,
+				0BC5581C199A4CDC0087886F /* bg-addbutton@2x.png */,
+				0BC5581D199A4CDC0087886F /* bg-menuitem-highlighted.png */,
+				0BC5581E199A4CDC0087886F /* bg-menuitem-highlighted@2x.png */,
+				0BC5581F199A4CDC0087886F /* bg-menuitem.png */,
+				0BC55820199A4CDC0087886F /* bg-menuitem@2x.png */,
+				0BC55821199A4CDC0087886F /* icon-plus-highlighted.png */,
+				0BC55822199A4CDC0087886F /* icon-plus-highlighted@2x.png */,
+				0BC55823199A4CDC0087886F /* icon-plus.png */,
+				0BC55824199A4CDC0087886F /* icon-plus@2x.png */,
+				0BC55825199A4CDC0087886F /* icon-star.png */,
+				0BC55826199A4CDC0087886F /* icon-star@2x.png */,
+			);
+			name = Resource;
+			sourceTree = "<group>";
+		};
 		1291D2711994ACE800E67342 = {
 			isa = PBXGroup;
 			children = (
@@ -140,6 +197,8 @@
 		1291D27C1994ACE800E67342 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0BC5583D199A4DEB0087886F /* AMapSearchKit.framework */,
+				0BC5583B199A4DE10087886F /* MAMapKit.framework */,
 				1291D2C51994B56C00E67342 /* AMapSearchKit.framework */,
 				1291D2C31994B56200E67342 /* MAMapKit.framework */,
 				1291D2C11994B52800E67342 /* libstdc++.dylib */,
@@ -161,6 +220,7 @@
 		1291D2831994ACE800E67342 /* Nothing */ = {
 			isa = PBXGroup;
 			children = (
+				0BC55811199A4C330087886F /* Resource */,
 				1291D2AF1994B45A00E67342 /* ThirdLib */,
 				1291D2AE1994B44D00E67342 /* Controller */,
 				1291D2AD1994B44600E67342 /* Model */,
@@ -205,6 +265,10 @@
 		1291D2AC1994B43F00E67342 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				0BC55835199A4D0A0087886F /* QuadCurveMenu.h */,
+				0BC55836199A4D0A0087886F /* QuadCurveMenu.m */,
+				0BC55837199A4D0A0087886F /* QuadCurveMenuItem.h */,
+				0BC55838199A4D0A0087886F /* QuadCurveMenuItem.m */,
 				1291D2C91994C1CD00E67342 /* PTFuncTableView.h */,
 				1291D2CA1994C1CD00E67342 /* PTFuncTableView.m */,
 			);
@@ -315,8 +379,22 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0BC55833199A4CDC0087886F /* icon-star.png in Resources */,
+				0BC55831199A4CDC0087886F /* icon-plus.png in Resources */,
+				0BC5582D199A4CDC0087886F /* bg-menuitem.png in Resources */,
+				0BC55828199A4CDC0087886F /* bg-addbutton-highlighted@2x.png in Resources */,
+				0BC55832199A4CDC0087886F /* icon-plus@2x.png in Resources */,
+				0BC5582C199A4CDC0087886F /* bg-menuitem-highlighted@2x.png in Resources */,
+				0BC5582A199A4CDC0087886F /* bg-addbutton@2x.png in Resources */,
+				0BC55827199A4CDC0087886F /* bg-addbutton-highlighted.png in Resources */,
+				0BC55830199A4CDC0087886F /* icon-plus-highlighted@2x.png in Resources */,
+				0BC55829199A4CDC0087886F /* bg-addbutton.png in Resources */,
+				0BC5582E199A4CDC0087886F /* bg-menuitem@2x.png in Resources */,
 				1291D2C81994B57E00E67342 /* AMap.bundle in Resources */,
+				0BC5582F199A4CDC0087886F /* icon-plus-highlighted.png in Resources */,
 				1291D2881994ACE800E67342 /* InfoPlist.strings in Resources */,
+				0BC5582B199A4CDC0087886F /* bg-menuitem-highlighted.png in Resources */,
+				0BC55834199A4CDC0087886F /* icon-star@2x.png in Resources */,
 				1291D2901994ACE800E67342 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -338,7 +416,9 @@
 			files = (
 				1291D28E1994ACE800E67342 /* PTAppDelegate.m in Sources */,
 				1291D2CE1994CCF100E67342 /* PTWelcomeViewController.m in Sources */,
+				0BC5583A199A4D0A0087886F /* QuadCurveMenuItem.m in Sources */,
 				1291D28A1994ACE800E67342 /* main.m in Sources */,
+				0BC55839199A4D0A0087886F /* QuadCurveMenu.m in Sources */,
 				1291D2B21994B47800E67342 /* PTMapViewController.m in Sources */,
 				12A132341995D022005A994A /* PTFriendListViewController.m in Sources */,
 				1291D2CB1994C1CD00E67342 /* PTFuncTableView.m in Sources */,
@@ -464,6 +544,8 @@
 					"$(inherited)",
 					/Users/yunzhongyang/Desktop/AMap_iOS_API_Lib_V2.2.1/2D,
 					/Users/yunzhongyang/Desktop/AMap_iOS_API_Lib_V2.2.1/Search,
+					/Users/duwen/Documents/PeterStudio/AMap_iOS_API_Lib_V2.2.1/2D,
+					/Users/duwen/Documents/PeterStudio/AMap_iOS_API_Lib_V2.2.1/Search,
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Nothing/Nothing-Prefix.pch";
@@ -483,6 +565,8 @@
 					"$(inherited)",
 					/Users/yunzhongyang/Desktop/AMap_iOS_API_Lib_V2.2.1/2D,
 					/Users/yunzhongyang/Desktop/AMap_iOS_API_Lib_V2.2.1/Search,
+					/Users/duwen/Documents/PeterStudio/AMap_iOS_API_Lib_V2.2.1/2D,
+					/Users/duwen/Documents/PeterStudio/AMap_iOS_API_Lib_V2.2.1/Search,
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Nothing/Nothing-Prefix.pch";

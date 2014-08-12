@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "PTFuncTableView.h"
 
-@interface PTMapViewController : UIViewController<PTFuncTableViewDelegate>{
+@interface PTMapViewController : UIViewController<PTFuncTableViewDelegate,QuadCurveMenuDelegate>{
     BOOL isRightBtnSelected;
 }
 

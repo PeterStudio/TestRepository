@@ -26,16 +26,16 @@
     //    b7021a3686bc3ec3842686efc0d69927
     //    AMapSearchAPI *search = [[AMapSearchAPI alloc] initWithSearchKey: @"您的key" Delegate:self];
     
-//    PTMapViewController *mapVC = [[PTMapViewController alloc] init];
-//    mapVC.title = @"云中央";
-//    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:mapVC];
-//    [self.window setRootViewController:nav];
+    PTMapViewController *mapVC = [[PTMapViewController alloc] init];
+    mapVC.title = @"云中央";
+    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:mapVC];
+    [self.window setRootViewController:nav];
     
 //    PTWelcomeViewController *welcomeVC = [[PTWelcomeViewController alloc] init];
 //    [self.window setRootViewController:welcomeVC];
     
-    PTFriendListViewController *friendListVC = [[PTFriendListViewController alloc] init];
-    [self.window setRootViewController:friendListVC];
+//    PTFriendListViewController *friendListVC = [[PTFriendListViewController alloc] init];
+//    [self.window setRootViewController:friendListVC];
     
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];

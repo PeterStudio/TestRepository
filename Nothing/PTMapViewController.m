@@ -67,6 +67,8 @@
     self.listView.funcDelegate = self;
     [self.view addSubview:self.listView];
     [self.view bringSubviewToFront:self.listView];
+    
+    [self addQuardCurveMenu];
 }
 
 - (void)showPopView:(id)sender{
@@ -90,6 +92,54 @@
         [self.listView setFrame:CGRectMake(self.view.frame.size.width - 100, 64, 100, 0)];
     } completion:nil];
 }
+
+
+/**
+ *  添加菜单栏
+ */
+- (void)addQuardCurveMenu{
+    UIImage *storyMenuItemImage = [UIImage imageNamed:@"bg-menuitem.png"];
+    UIImage *storyMenuItemImagePressed = [UIImage imageNamed:@"bg-menuitem-highlighted.png"];
+    
+    // Camera MenuItem.
+    QuadCurveMenuItem *cameraMenuItem = [[QuadCurveMenuItem alloc] initWithImage:storyMenuItemImage
+                                                                highlightedImage:storyMenuItemImagePressed
+                                                                    ContentImage:[UIImage imageNamed:@"icon-star.png"]
+                                                         highlightedContentImage:nil];
+    // People MenuItem.
+    QuadCurveMenuItem *peopleMenuItem = [[QuadCurveMenuItem alloc] initWithImage:storyMenuItemImage
+                                                                highlightedImage:storyMenuItemImagePressed
+                                                                    ContentImage:[UIImage imageNamed:@"icon-star.png"]
+                                                         highlightedContentImage:nil];
+    // Place MenuItem.
+    QuadCurveMenuItem *placeMenuItem = [[QuadCurveMenuItem alloc] initWithImage:storyMenuItemImage
+                                                               highlightedImage:storyMenuItemImagePressed
+                                                                   ContentImage:[UIImage imageNamed:@"icon-star.png"]
+                                                        highlightedContentImage:nil];
+    // Music MenuItem.
+    QuadCurveMenuItem *musicMenuItem = [[QuadCurveMenuItem alloc] initWithImage:storyMenuItemImage
+                                                               highlightedImage:storyMenuItemImagePressed
+                                                                   ContentImage:[UIImage imageNamed:@"icon-star.png"]
+                                                        highlightedContentImage:nil];
+    // Thought MenuItem.
+    QuadCurveMenuItem *thoughtMenuItem = [[QuadCurveMenuItem alloc] initWithImage:storyMenuItemImage
+                                                                 highlightedImage:storyMenuItemImagePressed
+                                                                     ContentImage:[UIImage imageNamed:@"icon-star.png"]
+                                                          highlightedContentImage:nil];
+    
+    NSArray *menus = [NSArray arrayWithObjects:cameraMenuItem, peopleMenuItem, placeMenuItem, musicMenuItem, thoughtMenuItem, nil];
+    QuadCurveMenu *menu = [[QuadCurveMenu alloc] initWithFrame:self.view.bounds menus:menus];
+    menu.delegate = self;
+    [self.view addSubview:menu];
+    [self.view bringSubviewToFront:menu];
+}
+
+#pragma mark- QuadCurveMenuDelegate
+- (void)quadCurveMenu:(QuadCurveMenu *)menu didSelectIndex:(NSInteger)idx
+{
+    NSLog(@"Select the index : %d",idx);
+}
+
 
 #pragma mark - MAMapViewDelegate
 - (void)mapView:(MAMapView *)mapView didUpdateUserLocation:(MAUserLocation *)userLocation updatingLocation:(BOOL)updatingLocation{
