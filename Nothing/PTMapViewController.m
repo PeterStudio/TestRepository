@@ -193,26 +193,47 @@
 
 
 #pragma mark - MAMapViewDelegate
+// 对UserLocation精度圈设置
+- (void)mapView:(MAMapView *)mapView didAddAnnotationViews:(NSArray *)views
+{
+    MAAnnotationView *view = views[0];
+    
+    // 放到该方法中用以保证userlocation的annotationView已经添加到地图上了。
+    if ([view.annotation isKindOfClass:[MAUserLocation class]])
+    {
+        MAUserLocationRepresentation *pre = [[MAUserLocationRepresentation alloc] init];
+        pre.fillColor = [UIColor colorWithRed:0.9 green:0.1 blue:0.1 alpha:0.3];
+        pre.strokeColor = [UIColor colorWithRed:0.1 green:0.1 blue:0.9 alpha:1.0];
+        pre.image = [UIImage imageNamed:@"location.png"];
+        pre.lineWidth = 3;
+        pre.lineDashPattern = @[@6, @3];
+        
+        [self.mapView updateUserLocationRepresentation:pre];
+        
+        view.calloutOffset = CGPointMake(0, 0);
+    }  
+}
+
 
 - (MAAnnotationView *)mapView:(MAMapView *)mapView viewForAnnotation:(id<MAAnnotation>)annotation
 {
-    if ([annotation isKindOfClass:[MAUserLocation class]]) {
-        // 当前用户定位展示
-        static NSString *pointReuseIndetifier = @"pointReuseIndetifier";
-        MAPinAnnotationView *annotationView = (MAPinAnnotationView*)[mapView dequeueReusableAnnotationViewWithIdentifier:pointReuseIndetifier];
-        if (annotationView == nil)
-        {
-            annotationView = [[MAPinAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:pointReuseIndetifier];
-        }
-        
-        annotationView.canShowCallout               = YES;
-        annotationView.animatesDrop                 = YES;
-        annotationView.draggable                    = YES;
-        annotationView.rightCalloutAccessoryView    = [UIButton buttonWithType:UIButtonTypeDetailDisclosure];
-        //        annotationView.pinColor                     = [self.annotations indexOfObject:annotation];
-        
-        return annotationView;
-    }
+//    if ([annotation isKindOfClass:[MAUserLocation class]]) {
+//        // 当前用户定位展示
+//        static NSString *pointReuseIndetifier = @"pointReuseIndetifier";
+//        MAPinAnnotationView *annotationView = (MAPinAnnotationView*)[mapView dequeueReusableAnnotationViewWithIdentifier:pointReuseIndetifier];
+//        if (annotationView == nil)
+//        {
+//            annotationView = [[MAPinAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:pointReuseIndetifier];
+//        }
+//        
+//        annotationView.canShowCallout               = YES;
+//        annotationView.animatesDrop                 = YES;
+//        annotationView.draggable                    = YES;
+//        annotationView.rightCalloutAccessoryView    = [UIButton buttonWithType:UIButtonTypeDetailDisclosure];
+//        //        annotationView.pinColor                     = [self.annotations indexOfObject:annotation];
+//        
+//        return annotationView;
+//    }
     
     if ([annotation isKindOfClass:[MAPointAnnotation class]])
     {
