@@ -8,16 +8,24 @@
 
 #import "PTMapViewController.h"
 #import <MAMapKit/MAMapKit.h>
+#import <AMapSearchKit/AMapSearchAPI.h>
 
-@interface PTMapViewController ()<MAMapViewDelegate>
-
+@interface PTMapViewController ()<MAMapViewDelegate,AMapSearchDelegate>
+{
+    CLLocationCoordinate2D currentCoor;
+}
 @property(nonatomic,strong) MAMapView *mapView;
+@property(nonatomic,strong) AMapSearchAPI *search;
+
+
+
 
 @property (nonatomic)PTFuncTableView *listView;
 @end
 
 @implementation PTMapViewController
 @synthesize mapView = _mapView;
+@synthesize search = _search;
 @synthesize listView = _listView;
 
 
@@ -32,6 +40,9 @@
 
 - (void)configData{
     isRightBtnSelected = NO;
+    isFirstLocation = NO;
+    
+    self.search.delegate = self;
 }
 
 - (void)viewDidAppear:(BOOL)animated{
@@ -59,6 +70,8 @@
     self.mapView.delegate = self;
     self.mapView.userInteractionEnabled = YES;
     [self.mapView sizeToFit];
+//    [self.mapView setZoomLevel:0.5 animated:YES];
+
     [self.mapView setUserTrackingMode: MAUserTrackingModeFollow animated:YES];
     [self.view addSubview:self.mapView];
     
@@ -134,6 +147,9 @@
     [self.view bringSubviewToFront:menu];
 }
 
+
+
+
 #pragma mark- QuadCurveMenuDelegate
 - (void)quadCurveMenu:(QuadCurveMenu *)menu didSelectIndex:(NSInteger)idx
 {
@@ -144,8 +160,29 @@
 #pragma mark - MAMapViewDelegate
 - (void)mapView:(MAMapView *)mapView didUpdateUserLocation:(MAUserLocation *)userLocation updatingLocation:(BOOL)updatingLocation{
     NSLog(@"location:%f",userLocation.coordinate.latitude);
-    [self.mapView setCenterCoordinate:userLocation.coordinate];
-    userLocation.title = @"这是我的位置";
+
+    
+    currentCoor = userLocation.coordinate;
+    
+    if (!isFirstLocation) {
+        isFirstLocation = YES;
+        NSLog(@"first enter");
+//        [(ReGeocodeAnnotation*)view.annotation reGeocode]
+        
+        
+        [self.mapView setCenterCoordinate:currentCoor];
+//        userLocation.title = @"我的位置";
+//        userLocation.subtitle = @"泰山路8号瞬兴科技园云中央";
+        
+        MACoordinateRegion region;
+        region.center = userLocation.coordinate;
+        region.span = MACoordinateSpanMake(0, 0);
+        [self.mapView setRegion:region animated:YES];
+    }
+    
+    
+//    [self.mapView setZoomLevel:0 animated:YES];
+//    MACoordinateRegion *region = MACoordinateRegionMake(userLocation, MACoordinateSpanMake(0, 0));
     
 }
 
@@ -206,6 +243,13 @@
 - (void)mapView:(MAMapView *)mapView didSelectAnnotationView:(MAAnnotationView *)view
 {
     NSLog(@"view:%@",view);
+    if ([view.annotation isKindOfClass:[MAUserLocation class]])
+    {
+        mapView.userLocation.title = @"我的位置";
+        mapView.userLocation.subtitle = @"泰山路8号瞬兴科技园云中央";//[(ReGeocodeAnnotation*)view.annotation reGeocode];
+    }
+    
+    
     /* Adjust the map center in order to show the callout view completely. */
     //    if ([view isKindOfClass:[CustomAnnotationView class]]) {
     //        CustomAnnotationView *cusView = (CustomAnnotationView *)view;
@@ -227,6 +271,28 @@
     //        }
     //        
     //    }
+}
+
+#pragma mark - AMapSearchDelegate
+
+- (void)search:(id)searchRequest error:(NSString *)errInfo
+{
+    NSLog(@"%s: searchRequest = %@, errInfo= %@", __func__, [searchRequest class], errInfo);
+}
+
+#pragma mark - AMapSearchDelegate
+
+/* 逆地理编码回调. */
+- (void)onReGeocodeSearchDone:(AMapReGeocodeSearchRequest *)request response:(AMapReGeocodeSearchResponse *)response
+{
+//    if (response.regeocode != nil)
+//    {
+//        CLLocationCoordinate2D coordinate = CLLocationCoordinate2DMake(request.location.latitude, request.location.longitude);
+//        ReGeocodeAnnotation *reGeocodeAnnotation = [[ReGeocodeAnnotation alloc] initWithCoordinate:coordinate
+//                                                                                         reGeocode:response.regeocode];
+//        
+//        [self.mapView addAnnotation:reGeocodeAnnotation];
+//    }
 }
 
 

@@ -11,6 +11,8 @@
 
 @interface PTMapViewController : UIViewController<PTFuncTableViewDelegate,QuadCurveMenuDelegate>{
     BOOL isRightBtnSelected;
+    BOOL isFirstLocation;
+    
 }
 
 @end

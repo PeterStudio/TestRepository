@@ -44,7 +44,7 @@
         [lab setAlpha:1];
     } completion:^(BOOL finished){
         // remove lab
-        [lab removeFromSuperview];
+//        [lab removeFromSuperview];
         
         
         

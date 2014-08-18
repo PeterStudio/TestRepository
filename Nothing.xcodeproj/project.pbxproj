@@ -50,6 +50,7 @@
 		1291D2CB1994C1CD00E67342 /* PTFuncTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1291D2CA1994C1CD00E67342 /* PTFuncTableView.m */; };
 		1291D2CE1994CCF100E67342 /* PTWelcomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1291D2CD1994CCF100E67342 /* PTWelcomeViewController.m */; };
 		12A132341995D022005A994A /* PTFriendListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 12A132331995D022005A994A /* PTFriendListViewController.m */; };
+		12FA508219A1DEA000D27122 /* PTUserInfoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 12FA508119A1DEA000D27122 /* PTUserInfoModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -118,6 +119,8 @@
 		1291D2CD1994CCF100E67342 /* PTWelcomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTWelcomeViewController.m; sourceTree = "<group>"; };
 		12A132321995D022005A994A /* PTFriendListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTFriendListViewController.h; sourceTree = "<group>"; };
 		12A132331995D022005A994A /* PTFriendListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTFriendListViewController.m; sourceTree = "<group>"; };
+		12FA508019A1DEA000D27122 /* PTUserInfoModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTUserInfoModel.h; sourceTree = "<group>"; };
+		12FA508119A1DEA000D27122 /* PTUserInfoModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTUserInfoModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -220,6 +223,7 @@
 		1291D2831994ACE800E67342 /* Nothing */ = {
 			isa = PBXGroup;
 			children = (
+				12FA508319A1DF4A00D27122 /* Common */,
 				0BC55811199A4C330087886F /* Resource */,
 				1291D2AF1994B45A00E67342 /* ThirdLib */,
 				1291D2AE1994B44D00E67342 /* Controller */,
@@ -278,6 +282,8 @@
 		1291D2AD1994B44600E67342 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				12FA508019A1DEA000D27122 /* PTUserInfoModel.h */,
+				12FA508119A1DEA000D27122 /* PTUserInfoModel.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -301,6 +307,13 @@
 				1291D2C71994B57E00E67342 /* AMap.bundle */,
 			);
 			name = ThirdLib;
+			sourceTree = "<group>";
+		};
+		12FA508319A1DF4A00D27122 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Common;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -419,6 +432,7 @@
 				0BC5583A199A4D0A0087886F /* QuadCurveMenuItem.m in Sources */,
 				1291D28A1994ACE800E67342 /* main.m in Sources */,
 				0BC55839199A4D0A0087886F /* QuadCurveMenu.m in Sources */,
+				12FA508219A1DEA000D27122 /* PTUserInfoModel.m in Sources */,
 				1291D2B21994B47800E67342 /* PTMapViewController.m in Sources */,
 				12A132341995D022005A994A /* PTFriendListViewController.m in Sources */,
 				1291D2CB1994C1CD00E67342 /* PTFuncTableView.m in Sources */,
@@ -495,7 +509,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -528,7 +542,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -550,8 +564,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Nothing/Nothing-Prefix.pch";
 				INFOPLIST_FILE = "Nothing/Nothing-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -571,8 +586,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Nothing/Nothing-Prefix.pch";
 				INFOPLIST_FILE = "Nothing/Nothing-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
